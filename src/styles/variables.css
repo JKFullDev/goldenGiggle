@@ -1,0 +1,74 @@
+/* src/styles/variables.css */
+:root {
+    /* Colores - Light Mode */
+    --bg-primary: #ffffff;
+    --bg-secondary: #f8f9fa;
+    --text-primary: #1a1a1a;
+    --text-secondary: #6c757d;
+    --accent-color: #ffd700;
+    --accent-dark: #ccae00;
+    --header-bg: #ffffff;
+    --header-text: #1a1a1a;
+    --hover-bg: rgba(0, 0, 0, 0.05);
+
+    /* Colores - Dark Mode */
+    --bg-primary-dark: #1a1a1a;
+    --bg-secondary-dark: #2d2d2d;
+    --text-primary-dark: #ffffff;
+    --text-secondary-dark: #adb5bd;
+    --accent-color-dark: #ffd700;
+    --accent-dark-dark: #ccae00;
+    --header-bg-dark: #2d2d2d;
+    --header-text-dark: #ffffff;
+    --hover-bg-dark: rgba(255, 255, 255, 0.1);
+
+    /* Espaciado */
+    --spacing-xs: 0.25rem;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 1.5rem;
+    --spacing-xl: 2rem;
+
+    /* Bordes */
+    --border-radius: 0.5rem;
+    --border-width: 1px;
+
+    /* Sombras */
+    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.15);
+    --shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.2);
+
+    /* SOMBRAS - Dark Mode (blancas) */
+    --shadow-sm-dark: 0 2px 4px rgba(255, 255, 255, 0.05);
+    --shadow-md-dark: 0 4px 8px rgba(255, 255, 255, 0.08);
+    --shadow-lg-dark: 0 8px 16px rgba(255, 255, 255, 0.12);
+
+    /* Tipografía */
+    --font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-semibold: 600;
+    --font-bold: 700;
+
+    /* Tamaños */
+    --max-width: 1200px;
+    --container-padding: 2rem;
+
+    /* Transiciones */
+    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Dark mode variables */
+/* Selector para cuando <html> tiene data-theme="dark" */
+[data-theme="dark"] {
+    --bg-primary: var(--bg-primary-dark);
+    --bg-secondary: var(--bg-secondary-dark);
+    --text-primary: var(--text-primary-dark);
+    --text-secondary: var(--text-secondary-dark);
+    --header-bg: var(--header-bg-dark);
+    --header-text: var(--header-text-dark);
+    --hover-bg: var(--hover-bg-dark);
+    --shadow-sm: var(--shadow-sm-dark);
+    --shadow-md: var(--shadow-md-dark);
+    --shadow-lg: var(--shadow-lg-dark);
+}

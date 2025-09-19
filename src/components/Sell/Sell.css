@@ -1,0 +1,78 @@
+/* src/components/Sell/Sell.css */
+.sell {
+    min-height: 100vh;
+}
+
+.sell__header {
+    background: var(--bg-secondary);
+    padding: var(--spacing-xl) 0;
+    text-align: center;
+}
+
+.sell__title {
+    margin-bottom: var(--spacing-sm);
+    font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.sell__subtitle {
+    font-size: 1.125rem;
+    color: var(--text-secondary);
+    margin-bottom: var(--spacing-xl);
+}
+
+.back-btn {
+    display: block;
+    margin: 0 auto;
+    max-width: 200px;
+}
+
+.sell__form-section {
+    padding: var(--spacing-xl) 0;
+}
+
+.appointment-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: var(--spacing-lg);
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: var(--spacing-sm);
+    font-weight: var(--font-medium);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: var(--spacing-md);
+    border: var(--border-width) solid var(--text-secondary);
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    transition: var(--transition);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 2px rgba(255, 215, 0, 0.2);
+}
+
+.submit-btn {
+    width: 100%;
+    padding: var(--spacing-md);
+    font-size: 1.125rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .appointment-form {
+        padding: 0 var(--spacing-md);
+    }
+}

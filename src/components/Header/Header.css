@@ -1,0 +1,115 @@
+/* src/components/Header/Header.css */
+.header {
+    background: var(--header-bg);
+    color: var(--header-text);
+    box-shadow: var(--shadow-sm);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header__container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.logo__link {
+    color: inherit;
+    text-decoration: none;
+    font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+    font-weight: var(--font-bold);
+}
+
+.nav__list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 2rem;
+}
+
+.nav__link {
+    color: inherit;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+}
+
+.nav__link:hover {
+    background: var(--hover-bg);
+}
+
+.header__actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.cart-btn,
+.theme-toggle {
+    position: relative;
+    background: none;
+    border: none;
+    color: inherit;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+}
+
+.cart-btn:hover,
+.theme-toggle:hover {
+    background: var(--hover-bg);
+}
+
+.cart__badge {
+    position: absolute;
+    top: -0.25rem;
+    right: -0.25rem;
+    background: var(--accent-color);
+    color: white;
+    border-radius: 50%;
+    min-width: 1.25rem;
+    height: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    font-weight: var(--font-bold);
+}
+
+.user-menu {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.user-greeting {
+    font-size: 0.9rem;
+    margin: 1rem;
+    opacity: 0.8;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .header__container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .nav__list {
+        gap: 1rem;
+    }
+
+    .header__actions {
+        order: -1;
+        width: 100%;
+        justify-content: space-between;
+    }
+}

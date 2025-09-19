@@ -1,0 +1,147 @@
+/* src/components/Home/Home.css */
+.home {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero {
+    background: linear-gradient(135deg, var(--accent-color) 0%, var(--accent-dark) 100%);
+    color: white;
+    padding: var(--spacing-xl) 0;
+    text-align: center;
+}
+
+.hero__container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 var(--container-padding);
+}
+
+.hero__title {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    margin-bottom: var(--spacing-sm);
+}
+
+.hero__subtitle {
+    font-size: 1.25rem;
+    opacity: 0.9;
+    margin-bottom: var(--spacing-xl);
+}
+
+.hero__prices {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-xl);
+}
+
+.price-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius);
+    backdrop-filter: blur(10px);
+}
+
+.price-card h3 {
+    margin-bottom: var(--spacing-sm);
+    font-size: 1.25rem;
+}
+
+.price {
+    font-size: 2.5rem;
+    font-weight: var(--font-bold);
+    margin-bottom: var(--spacing-sm);
+    color: var(--accent-color);
+}
+
+.price-card.error .price {
+    color: #ff6b6b;
+}
+
+.ingots {
+    padding: var(--spacing-xl) 0;
+}
+
+.ingots__container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 var(--container-padding);
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: var(--spacing-xl);
+    font-size: clamp(1.75rem, 3vw, 2.5rem);
+}
+
+.ingots__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-lg);
+}
+
+.ingot-card {
+    display: flex;
+    flex-direction: column;
+    background: var(--bg-primary);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.ingot-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+}
+
+.ingot-card__image {
+    height: 200px;
+    overflow: hidden;
+}
+
+.ingot-card__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ingot-card__content {
+    padding: var(--spacing-lg);
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.ingot-card__title {
+    margin-bottom: var(--spacing-sm);
+}
+
+.ingot-card__description {
+    color: var(--text-secondary);
+    margin-bottom: var(--spacing-md);
+}
+
+.ingot-card__price {
+    font-size: 1.125rem;
+    font-weight: var(--font-semibold);
+    color: var(--accent-color);
+    margin-bottom: var(--spacing-md);
+}
+
+.ingot-card__cta {
+    margin-top: auto;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero {
+        padding: var(--spacing-lg) 0;
+    }
+
+    .ingots__grid {
+        grid-template-columns: 1fr;
+    }
+}
