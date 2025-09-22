@@ -22,7 +22,7 @@ export const storageUtils = {
 
     // Login
     isLoggedIn() {  //Verifica si hay usuario
-        return localStorage.getItem('golden-giggle-user') !== null;
+        return sessionStorage.getItem('golden-giggle-user') !== null;
     },
 
 
@@ -30,8 +30,8 @@ export const storageUtils = {
         // Coge todo lo que hay antes de la @
         const name = email.split('@')[0];
 
-        // Guarda ambos en localStorage
-        localStorage.setItem('golden-giggle-user', JSON.stringify({
+        // Guarda ambos en sessionStorage
+        sessionStorage.setItem('golden-giggle-user', JSON.stringify({
             email,
             name
         }));
@@ -39,11 +39,11 @@ export const storageUtils = {
     ,
 
     logout() { //Desloguea
-        localStorage.removeItem('golden-giggle-user'); //Borra la clave
+        sessionStorage.removeItem('golden-giggle-user'); //Borra la clave
     },
 
     //Obtiene usuario
     getUser() {
-        return JSON.parse(localStorage.getItem('golden-giggle-user') || 'null');
+        return JSON.parse(sessionStorage.getItem('golden-giggle-user') || 'null');
     }
 };
