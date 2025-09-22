@@ -115,7 +115,7 @@ bash
 
 `npm run dev`
 
-3. **Abre tu navegador** en: http://localhost:3000
+3. **Abre tu navegador** en: http://localhost:"puerto que te indique la consola de VS Code al ejecutar el comando npm run dev"
 
 
 
