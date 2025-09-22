@@ -23,8 +23,8 @@ const Footer = () => {
             
             <div class="footer__section">
                 <h4 class="footer__subtitle">Contact</h4>
-                <p>Email: info@goldengiggle.com</p>
-                <p>Phone: +1 (555) 123-4567</p>
+                <p>info@goldengiggle.com</p>
+                <p>+1 (555) 123-4567</p>
             </div>
             
             <div class="footer__section">
