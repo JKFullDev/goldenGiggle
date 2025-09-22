@@ -40,7 +40,7 @@ El proyecto demuestra habilidades avanzadas de **componentización**, **gestión
 
 - 🏗️ **Componentes Modulares**: Estructura organizada con carpetas por componente
 - 🔄 **Router Manual**: Sistema de navegación SPA sin librerías externas
-- 💾 **Estado Persistente**: localStorage para carrito, usuario y preferencias
+- 💾 **Estado Persistente**: localStorage para carrito y preferencias; y sessionStorage para usuario
 - 🎯 **API Integration**: Consumo seguro de Gold API con manejo de errores
 - 🛠️ **Build Moderno**: Vite para desarrollo rápido y optimización de producción
 
