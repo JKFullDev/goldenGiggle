@@ -38,7 +38,7 @@ const Footer = () => {
         </div>
         
         <div class="footer__bottom">
-            <p>&copy; 2025 Golden Giggle. All rights reserved.</p>
+            <p>&copy; ${new Date().getFullYear()} Juan Carlos Alonso Hernando. All rights reserved.</p>
         </div>
     `;
 
