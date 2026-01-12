@@ -177,7 +177,7 @@ Cada componente sigue el patrón:
 
 components/[Nombre]/├── [Nombre].js     
                     └── [Nombre].css    # Estilos encapsulados
-````
+```
 ---
 
 ## 🎨 **Sistema de Diseño**
@@ -283,12 +283,10 @@ La aplicación consume precios en tiempo real de metales preciosos:
 
 ---
 
-## 📞 **Contacto**
+## 📬 Contacto
 
-**Desarrollador**: [Juan Carlos Alonso Hernando]
+LinkedIn: [Juan Carlos Alonso Hernando](https://www.linkedin.com/in/jcah-dev/)
 
-**Email**: [[juancarlosalonsohernando@gmail.com](mailto:juancarlosalonsohernando@gmail.com)]
+Email: jcarlos.al.hr@gmail.com
 
-**LinkedIn**: [[linkedin.com/in/tu-perfil](https://www.linkedin.com/in/jcah-dev/)]
-
-```
+Ubicación: Madrid, España
